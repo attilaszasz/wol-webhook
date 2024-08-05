@@ -7,12 +7,7 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <PublishAot>true</PublishAot>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
-  <ItemGroup>
-    <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.EnableSourceGenReflectionFallback" Value="true" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
-  </ItemGroup>
 
 </Project>
