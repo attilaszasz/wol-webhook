@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  wol-webhook:
+    image: ghcr.io/attilaszasz/wol-webhook:latest
+    container_name: wol
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - ASPNETCORE_HTTP_PORTS=12563  # Optional
