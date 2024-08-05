@@ -1,0 +1,11 @@
+@webhook_HostAddress = http://localhost:12563
+
+GET {{webhook_HostAddress}}/wol/
+Accept: application/json
+
+###
+
+GET {{webhook_HostAddress}}/wol/9C-6B-00-34-64-E3
+Accept: application/json
+
+###
