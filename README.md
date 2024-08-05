@@ -20,3 +20,12 @@ services:
     environment:
       - ASPNETCORE_HTTP_PORTS=12563  # Optional
 ```
+
+## Usage:
+
+Send a GET request to the app with the MAC address of the target computer:
+```bash
+wget http://{address}:12563/wol/00-11-22-33-44-55
+```
+
+> The MAC address should be in the format of `00-11-22-33-44-55`
