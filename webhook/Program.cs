@@ -5,6 +5,8 @@ using System.Text.RegularExpressions;
 
 var builder = WebApplication.CreateSlimBuilder(args);
 
+builder.Services.AddHealthChecks();
+
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
 options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default);
@@ -24,6 +26,8 @@ app.MapGet("/wol/{mac}", (string mac) =>
     WOL.SendMagicPackage(mac.Replace("-", ":"));
     return Results.Ok("Magic packet sent");
 });
+
+app.MapHealthChecks("/healthz");
 
 app.Run();
 
