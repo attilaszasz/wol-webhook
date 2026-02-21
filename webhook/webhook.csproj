@@ -8,8 +8,7 @@
     <PublishAot>true</PublishAot>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <OutputType>Exe</OutputType>
-    <PlatformTarget>x64</PlatformTarget>
-    <VersionPrefix>0.0.2</VersionPrefix>
+    <VersionPrefix>0.0.4</VersionPrefix>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
     <FileVersion>$(VersionPrefix)</FileVersion>
   </PropertyGroup>
